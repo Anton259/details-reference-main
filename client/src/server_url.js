@@ -1,0 +1,1 @@
+module.exports = 'https://details-reference.volsoc.ru';

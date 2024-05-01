@@ -1,0 +1,85 @@
+.orders_wrapper {
+    padding: 100px;
+}
+
+.order_wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0;
+}
+
+.order_login {
+    font-size: 30px;
+}
+
+.order_product_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin: 10px 0;
+}
+
+.order_product_cover {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.order_product_title {
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.order_product_count {
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+}
+
+.order_up {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.order_delete {
+    height: 40px;
+    opacity: 0.8;
+}
+
+.order_delete:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.order_status_admin {
+    border-radius: 5px;
+}
+
+.order_status_admin > option {
+    background: none;
+}
+
+@media(max-width: 800px) {
+    .orders_wrapper {
+        padding: 100px 0;
+    }
+
+    .order_product_wrapper {
+        height: 200px;
+    }
+
+    .order_product_wrapper {
+        flex-direction: column;
+    }
+
+    .order_product_count {
+        position: relative;
+    }
+}

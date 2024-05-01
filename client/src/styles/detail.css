@@ -1,0 +1,160 @@
+.detail_wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 400px 100px 100px;
+    overflow-y: scroll;
+    color: white;
+}
+
+.detail_title {
+    font-size: 42px;
+    word-wrap: break-word;
+}
+
+.detail_description {
+    width: 90%;
+}
+
+.detail_description_block {
+    width: 100%;
+    margin: 20px 0;
+    word-break: break-word;
+}
+
+.detail_description_block > div {
+    text-align: justify;
+}
+
+.detail_description_block > img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.detail_data {
+    position: absolute;
+    right: 100px;
+    top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.detail_created {
+    font-size: 18px;
+}
+
+.detail_view {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.detail_view > img {
+    height: 30px;
+}
+
+.detail_nopage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.detail_button {
+    z-index: 2000;
+    padding: 5px 10px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.detail_button:hover {
+    background: #3E8E41;
+    cursor: pointer;
+}
+
+.detail_back {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.nopage_button {
+    margin-top: 150px;
+}
+
+.detail_categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.detail_category {
+    padding-right: 8px;
+}
+
+.detail_order {
+    position: absolute;
+    top: 135px;
+    right: 100px;
+    display: grid;
+    gap: 10px;
+}
+
+.detail_order_count {
+    margin: 10px 0;
+}
+
+.noAuth {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail_order_busketCount {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 28px;
+}
+
+.detail_order_busketCount > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.detail_order_busketCount > div:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media(max-width: 800px) {
+    .detail_wrapper {
+        padding: 100px 10px;
+    }
+
+    .detail_data {
+        right: 10px;
+    }
+
+    .detail_button {
+        left: 20px;
+    }
+
+    .detail_order {
+        position: static;
+    }
+}

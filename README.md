@@ -1,1 +1,1 @@
-# details-reference-main
+# details-reference
